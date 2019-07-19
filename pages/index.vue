@@ -10,7 +10,7 @@
           <h1 class="title is-1 is-marginless ">Welcome to Mirari!</h1>
           
           <div class="sub"
-          ><h2 class="subtitle is-5 sub is-centered">An MTGArena blog - Stay tuned for some cool stuff. </h2></div>
+          ><h2 class="subtitle is-5 sub is-centered">An MTGArena blog - Stay tuned for some cool stuff.  </h2></div>
         </div> 
       </div>
       <div class="container postlist-container">
