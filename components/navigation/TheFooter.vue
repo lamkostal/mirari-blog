@@ -8,7 +8,7 @@
   }
 background:rgba(8, 83, 97,@rand(.6));
   <!-- background: rgba(96, 86, 158, @rand(.9)); -->
-transition: .2s ease @rand(200ms);
+transition: 20s ease-out @rand(4000ms);
 transform: rotate(@rand(360deg));
 clip-path: polygon(
   @rand(150%) 0, 100% @rand(80%), 0 @rand(20%)
@@ -47,9 +47,7 @@ export default {
 
 
 <style scoped>
-css-doodle{
-    /* position: absolute; */
-}
+
 .footer{
     height: 300px;
     background:grey;
@@ -75,5 +73,6 @@ css-doodle{
 
   color:rgb(255, 195, 128);
 }
+
 
 </style>

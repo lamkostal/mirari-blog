@@ -1,5 +1,5 @@
 <template>
-    <div class="posts-page container">
+    <div class="page container">
         <h1 class="title is-size-1 ">All posts</h1>
         <PostList :posts="loadedPosts"/>
     </div>

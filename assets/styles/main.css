@@ -9,6 +9,15 @@ background: #f7f7f9;
 .fade-enter, .fade-leave-active{
     opacity:0;
 }
+.scaleup-enter-active,
+.scaleup-leave-active{
+    transition : all 0.4s;
+    /* transition : opacity 0.1s; */
+}
+.scaleup-enter, .scaleup-leave-active{
+    transform:scale(0.9);
+    opacity:0;
+}
 h2{
     /* font-size: 1.5rem !important; */
     margin:15px 0 10px !important;
@@ -29,6 +38,13 @@ blockquote {
     margin: 2.5em 0 !important;
     position: relative;
   }
+  p{
+      margin:7px 0 !important;
+  }
+  .page{
+    padding: 120px 0;
+
+}
   
   
  

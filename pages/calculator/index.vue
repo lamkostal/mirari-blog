@@ -1,5 +1,5 @@
 <template>
-    <div class="about-page container">
+    <div class="page container">
         <section >
             <div class="">
                 <h1 class="title is-1">Calculator</h1>
@@ -80,14 +80,20 @@ export default {
             }
             
         }
+    },
+    transition:{
+        name:"scaleup",
+        mode:'out-in'
     }
+
     
 }
 </script>
 
 <style scoped>
 .about-page{
-    padding: 50px 0;
+     padding: 150px 0;
+
 }
 p{
      white-space: pre-line;

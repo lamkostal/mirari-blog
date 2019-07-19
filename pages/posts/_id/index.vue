@@ -6,9 +6,9 @@
                </div>
                <div class="post-title">
                     <h1 class="title">{{loadedPost.title}}</h1>
-                    <div class="level">
+                    <div class="">
                         <h2 class="post-subtitle subtitle is-marginless is-size-4">{{loadedPost.subtitle}}</h2>  
-                        <span class="grey is-size-7">last edit : {{fixedDate}}</span>
+                        <span class="grey is-size-7"> {{fixedDate}}</span>
                     </div>
                </div>
                  <br>

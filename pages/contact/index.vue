@@ -42,9 +42,10 @@ export default {
 </script>
 
 <style scoped>
-.page{
-    padding: 50px 0;
-}
+/* .page{
+     padding: 150px 0;
+
+} */
 p{
      white-space: pre-line;
     

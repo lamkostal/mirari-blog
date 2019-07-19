@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import TheHeader from '@/components/Navigation/TheHeader'
-import TheFooter from '@/components/Navigation/TheFooter'
-import TheSidenav from '@/components/Navigation/TheSidenav'
+import TheHeader from '@/components/navigation/TheHeader'
+import TheFooter from '@/components/navigation/TheFooter'
+import TheSidenav from '@/components/navigation/TheSidenav'
 export default {
   components:{
     TheHeader,

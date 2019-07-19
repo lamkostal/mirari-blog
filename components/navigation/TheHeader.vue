@@ -1,9 +1,9 @@
 <template>
 <div class="header-container">
-  <header class="the-header">
+  <header class="the-header" :class="{scrolled:scrolled}">
     
     <div class="logocontainer level is-marginless">
-      <nuxt-link to="/"><img class="logo" src="@/assets/images/mirarilogo1.svg" alt="arenahub logo"></nuxt-link>
+      <nuxt-link to="/"><img class="logo" :class="{scrolled:scrolled}" src="@/assets/images/mirarilogo3.svg" alt="mirari blog logo"></nuxt-link>
     </div>
     <div class="spacer"></div>
     <div class="navigation-items">
@@ -28,15 +28,33 @@ export default {
   name: "TheHeader",
   components: {
     TheSideNavToggle
-  }
-};
+  },
+  data(){
+    return {
+      scrolled:false,
+    }},
+    
+ 
+ methods: {
+  handleScroll () {
+    this.scrolled = window.scrollY > 0;
+  },
+},
+beforeMount () {
+  window.addEventListener('scroll', this.handleScroll);
+},
+beforeDestroy () {
+  window.removeEventListener('scroll', this.handleScroll);
+}
+}
 </script>
 
 
 <style scoped>
 .logo{
-  padding: 0px 0px ;
+  padding: 4px 0px ;
   height: 100px;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-container {
@@ -54,6 +72,7 @@ export default {
   z-index: 100;
   box-sizing: border-box;
   padding: 0 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -81,7 +100,7 @@ export default {
 }
 
 .nav-item {
-  margin: 0 25px;
+  margin: 0 20px;
   position: relative;
   font-size:18px
 }
@@ -113,6 +132,11 @@ export default {
   z-index: 200;
   width:100%;
   left:0%;
-  padding: 20px 0;
+  padding: 15px 0;
+ 
 }
+ .scrolled{
+   height: 80px;
+   transition: all 0.3s ease-in-out;
+ }
 </style>
