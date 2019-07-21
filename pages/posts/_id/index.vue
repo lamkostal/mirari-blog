@@ -51,8 +51,7 @@
         //             version:'draft',
                     
         //           }).then( res => {
-        //             console.log(res)
-                   
+        //             console.log(res) 
                     
         //                return {
         //                  blok:res.data.story.content,
