@@ -16,7 +16,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ],
     script:[
       {src:'/js/libs.core.min.js',SSR:false},{src:'/js/cbs.min.js',SSR:false},{src:'/js/ops.js',SSR:false},{src:'/js/init.js',SSR:false},
