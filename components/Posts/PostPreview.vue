@@ -3,7 +3,13 @@
         <article class="box">
           <div class="post-thumb" >
            <div class="post-content ">
-             <h2 class="title is-4">{{postTitle}}</h2>
+             <div class="">
+                   <h2 class="title is-4 is-inline-flex" >{{postTitle}}</h2>
+
+                 <img class="tube-icon  icon " src="@/assets/images/icon-youtube (omg).svg" alt="video here" v-if="videoicon" >
+
+               
+             </div>
             <div class="backgr image" :style="{backgroundImage:`url(${thumbnail})`}"></div>
             <div class="descriptive content">
                   <h3 class="subtitle is-6 sub">{{postSubtitle}}</h3>
@@ -38,6 +44,10 @@ export default {
             type:String,
             required:true
         },
+        videoicon:{
+            type:Boolean,
+            
+        }
         
     },
     computed:{
@@ -76,9 +86,18 @@ export default {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover ;
+    margin-top:30px;
 }
 .sub{
   height: 20px;
+}
+.tube-icon{
+   
+    /* width:35px; */
+    top:5px;
+    position: relative;
+    margin: 0 5px;
+  
 }
 
 

@@ -42,7 +42,8 @@ const createStore = () => {
                          thumbnail:bp.content.thumbnail,
                          date:bp.content.date,
                          author:bp.content.author,
-                         video:bp.content.video
+                         video:bp.content.video,
+                         videoicon:bp.content.videoicon
                        } 
                       })
                     

@@ -3,7 +3,7 @@
   <header class="the-header" :class="{scrolled:scrolled}">
     
     <div class="logocontainer level is-marginless">
-      <nuxt-link to="/"><img class="logo" :class="{scrolled:scrolled}" src="@/assets/images/mirarilogo3.svg" alt="mirari blog logo"></nuxt-link>
+      <nuxt-link to="/"><img class="logo" :class="{scrolled:scrolled}" src="@/assets/images/mirarilogo4.svg" alt="mirari blog logo"></nuxt-link>
     </div>
     <div class="spacer"></div>
     <div class="navigation-items">

@@ -11,6 +11,7 @@
           :postSubtitle="post.subtitle"
           :previewText="post.previewText"
           :thumbnail="post.thumbnail"
+          :videoicon="post.videoicon"
           />
     
         </section>
