@@ -1,6 +1,6 @@
     <template >
         <div class="single-post-page columns is-centered ">
-            <section class="post column is-7" v-editable="loadedPost.blok">
+            <section class="post column is-7 overflow" v-editable="loadedPost.blok">
                <div class="postimage image">
                     <img :src= loadedPost.thumbnail >
                </div>
@@ -12,14 +12,15 @@
                     </div>
                </div>
                  <br>
-                <div v-html="$md.render(loadedPost.content)" class="is-size-5 md-content"></div>
+                <div v-html="$md.render(loadedPost.content)" class="md-content "></div>
                   <div class="embed" v-html="loadedPost.video"></div>
                
-                <div class="author">
+                <div class="author ">
                     <p class="author-name is-size-7">
                         Written by {{loadedPost.author}}
                     </p>
                 </div>
+                <SocialShares :slug="slug"></SocialShares>        
               
                
             </section>
@@ -28,8 +29,13 @@
     </template>
 
     <script>
+    import SocialShares from "@/components/UI/SocialShares.vue"
 
     export default {
+        components:{
+            SocialShares,
+        },
+       
         computed:{
             loadedPost(){
                 let allstoredPosts = this.$store.getters.loadedPosts
@@ -42,7 +48,10 @@
             fixedDate(){
                 let oldDate = this.loadedPost.date
                 return oldDate.substring(0,11);
-                conso
+               
+            },
+            slug(){
+                return this.$route.params.id;
             }
           
         },
@@ -72,7 +81,7 @@
             this.$storyblok.on("change", () => {
             location.reload(true);
             });
-           
+           console.log(this.$route.params.id)
         }
      
     }
@@ -99,24 +108,28 @@
     .author{
         margin:30px 0;
         display: flex;
+        justify-content: flex-end;
     }
     .author-name{
         /* color:rgba(8, 83, 97,1);
         color:rgb(255, 195, 128); */
         color:gray;
         background:#fff;
-        padding:8px 15px;
-        border-radius: 15px;
+        padding:6px 10px;
+        border-radius: 10px;
         flex: 0 1 auto;
-        box-shadow: 1px 1px 2px 2px lightgrey;
+        box-shadow: 1px 1px 1px 1px lightgrey;
       
     }
     .md-content{
-        margin:2rem 0;
+        margin:1rem 0;
         
     }
     .embed{
         margin:1rem 0;
+    }
+    .overflow{
+        overflow: hidden;
     }
   
    

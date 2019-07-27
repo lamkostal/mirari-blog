@@ -16,7 +16,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script:[
       {src:'/js/libs.core.min.js',SSR:false},{src:'/js/cbs.min.js',SSR:false},{src:'/js/ops.js',SSR:false},{src:'/js/init.js',SSR:false},
@@ -95,7 +95,7 @@ module.exports = {
       
     }
   },
-  transition:{
+  pageTransition:{
     name:'fade',
     mode:'out-in'
   }

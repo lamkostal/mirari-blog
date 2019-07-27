@@ -104,14 +104,17 @@ export default {
 
 @media only screen and (max-width: 600px){
 .main-section{
-  padding: 25vh 15px 0 15px ;
+  padding: 2vh 15px 0 15px ;
 }
- } 
+.titles{
+  position: relative;
+  padding: 0vh 5vw 2vh 0;
+ } }
 
 .postlist-container{
   padding: 0vh 0 05vh 0;
   margin-top:-100px;
- z-index: 11;
+  z-index: 11;
 
 }
 .canvas-container{
