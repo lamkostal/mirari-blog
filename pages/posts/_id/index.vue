@@ -98,6 +98,14 @@
         overflow: hidden;
        
     }
+    @media (max-width:600px){
+
+    .postimage{
+        height:auto;
+        overflow: hidden;
+       
+    }
+    }
     .post-title{
         padding: 20px 0 0 0;
       

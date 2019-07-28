@@ -78,7 +78,7 @@ export default {
   box-shadow: 0 2px 2px #cccccc;
   background-color: white;
   /* width: 90%; */
-  height: 300px
+  /* min-height: 300px */
 }
 .backgr{
     width:100%;
@@ -88,9 +88,7 @@ export default {
     background-size: cover ;
     margin-top:30px;
 }
-.sub{
-  height: 20px;
-}
+
 .tube-icon{
    
     /* width:35px; */

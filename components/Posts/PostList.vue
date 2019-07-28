@@ -31,7 +31,7 @@ export default {
         },
         isRecent:{
             type:Boolean,
-            required:true
+           
         }
     },
     computed: {
