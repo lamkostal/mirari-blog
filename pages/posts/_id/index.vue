@@ -1,29 +1,31 @@
     <template >
-        <div class="single-post-page columns is-centered ">
-            <section class="post column is-7 overflow" v-editable="loadedPost.blok">
-               <div class="postimage image">
-                    <img :src= loadedPost.thumbnail >
-               </div>
-               <div class="post-title">
-                    <h1 class="title">{{loadedPost.title}}</h1>
-                    <div class="">
-                        <h2 class="post-subtitle subtitle is-marginless is-size-4">{{loadedPost.subtitle}}</h2>  
-                        <span class="grey is-size-7"> {{fixedDate}}</span>
+        <div class="single-post-page ">
+         <div class="columns is-centered">
+                <section class="post column is-7" v-editable="loadedPost.blok">
+                   <div class="postimage image">
+                        <img :src= loadedPost.thumbnail >
+                   </div>
+                   <div class="post-title">
+                        <h1 class="title">{{loadedPost.title}}</h1>
+                        <div class="">
+                            <h2 class="post-subtitle subtitle is-marginless is-size-4">{{loadedPost.subtitle}}</h2>  
+                            <span class="grey is-size-7"> {{fixedDate}}</span>
+                        </div>
+                   </div>
+                     <br>
+                    <div v-html="$md.render(loadedPost.content)" class="md-content "></div>
+                      <div class="embed" v-html="loadedPost.video"></div>
+                   
+                    <div class="author ">
+                        <p class="author-name is-size-7">
+                            Written by {{loadedPost.author}}
+                        </p>
                     </div>
-               </div>
-                 <br>
-                <div v-html="$md.render(loadedPost.content)" class="md-content "></div>
-                  <div class="embed" v-html="loadedPost.video"></div>
-               
-                <div class="author ">
-                    <p class="author-name is-size-7">
-                        Written by {{loadedPost.author}}
-                    </p>
-                </div>
-                <SocialShares :slug="slug"></SocialShares>        
-              
-               
-            </section>
+                    <SocialShares :slug="slug"></SocialShares>        
+                  
+                   
+                </section>
+         </div>
  
         </div>
     </template>
@@ -104,6 +106,9 @@
         height:auto;
         overflow: hidden;
        
+    }
+     .single-post-page{
+        padding: 15px;
     }
     }
     .post-title{
