@@ -56,8 +56,8 @@ beforeMount () {
 },
 mounted(){
 
-TweenMax.staggerTo('.greensc',1,{opacity:1,ease:Power2.easeOut},0.08);
-TweenMax.staggerFrom('.greensc',1,{rotation:55,ease:Power2.easeOut,transformOrigin:"30% 100%"},0.05);
+TweenMax.staggerTo('.greensc',1,{opacity:1,ease:Power2.easeOut},0.04);
+TweenMax.staggerFrom('.greensc',1,{rotation:55,ease:Power2.easeOut,transformOrigin:"30% 100%"},0.04);
 TweenMax.to('.logo',0.2,{opacity:1});
 TweenMax.staggerTo('.rednsc', 1 ,{opacity:1 ,ease:Power2.easeOut},0.1);
 TweenMax.staggerFrom('.rednsc',1.5,{rotation:-85,ease:Power3.easeOut,transformOrigin:"70% 0%"},0.07);

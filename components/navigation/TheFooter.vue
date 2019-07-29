@@ -61,6 +61,13 @@ export default {
     top:0;
     padding: 50px;
 }
+@media (max-width:600px){
+  .fcontent{
+   
+    padding: 40px 15px 0px;
+}
+.footer{margin-top:0}
+}
 .footerlinks{
     /* position:absolute; */
     display: flex;

@@ -109,7 +109,18 @@ export default {
 .titles{
   position: relative;
   padding: 0vh 5vw 2vh 0;
- } }
+ }
+ .canvas-container{
+   display: none;
+ }
+ .fullheight{
+  height:50vh;
+  display: flex;
+  align-items:flex-start;
+  padding: 10vh 0 5vh 0;
+  margin-bottom: 12vh
+}
+  }
 
 .postlist-container{
   padding: 0vh 0 05vh 0;
