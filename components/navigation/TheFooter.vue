@@ -66,7 +66,7 @@ export default {
    
     padding: 40px 15px 0px;
 }
-.footer{margin-top:0}
+.footer{margin-top:50px}
 }
 .footerlinks{
     /* position:absolute; */
