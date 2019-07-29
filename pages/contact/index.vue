@@ -7,7 +7,7 @@
                 <section class="form-section column is-6">
                      <h2 class="subtitle is-3">Say hi!</h2>
                       <p> We will be happy hearing from you!</p>
-                    <form action="" data-netlify-recaptcha="true" netlify>
+                    <form action="/" data-netlify-recaptcha="true" netlify>
                         <div class="field">
                             <label  class="label" for="name">name</label>
                             <input  class="input" name="name" type="text" placeholder="your name" required>
