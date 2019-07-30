@@ -29,14 +29,14 @@
                         <div class="control"><input class="button is-link" type="submit" value="Submit"></div>
                 
                     </form> -->
-                     <form action="/success.html" data-netlify-recaptcha="true" netlify>
+                     <form action="/success.html"  netlify>
                             <label for="name">Name</label>
                             <input name="name" type="text" placeholder="your name" required>
                             <label for="email">email</label>
                             <input name="email" type="email" placeholder="your email" required>
                             <label for="message">Please give us your feedback!</label>
                             <textarea name="message" id="" cols="30" rows="10" placeholder="leave your message here.."></textarea>
-                            <div data-netlify-recaptcha="true"></div>
+                           
                             <input type="submit" value="Submit" class="submit">
                             
                         
