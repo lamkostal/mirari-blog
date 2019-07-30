@@ -7,7 +7,7 @@
                 <section class="form-section column is-6">
                       <h2 class="subtitle is-3">Say hi!</h2>
                       <p> We will be happy hearing from you!</p>
-                    <!-- <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                    <form name="contact" method="POST"  data-netlify="true">
                         <div class="field">
                             <label  class="label" for="name">name</label>
                             <input  class="input" name="name" type="text" placeholder="your name" >
@@ -25,22 +25,10 @@
                              <p class="help is-info">this field is not required</p>
                         </div>
 
-                        <div data-netlify-recaptcha="true"></div>
                         <div class="control"><input class="button is-link" type="submit" value="Submit"></div>
                 
-                    </form> -->
-                     <form action="/success.html"  netlify>
-                            <label for="name">Name</label>
-                            <input name="name" type="text" placeholder="your name" required>
-                            <label for="email">email</label>
-                            <input name="email" type="email" placeholder="your email" required>
-                            <label for="message">Please give us your feedback!</label>
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="leave your message here.."></textarea>
-                           
-                            <input type="submit" value="Submit" class="submit">
-                            
-                        
                     </form>
+                
                 </section> 
             </div>
       
