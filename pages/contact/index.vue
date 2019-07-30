@@ -8,6 +8,7 @@
                       <h2 class="subtitle is-3">Say hi!</h2>
                       <p> We will be happy hearing from you!</p>
                     <form name="contact" method="POST"  data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
                         <div class="field">
                             <label  class="label" for="name">name</label>
                             <input  class="input" name="name" type="text" placeholder="your name" >
