@@ -5,9 +5,9 @@
                 <h1 class="title is-1">Contact us!</h1>
                
                 <section class="form-section column is-6">
-                     <h2 class="subtitle is-3">Say hi!</h2>
+                      <h2 class="subtitle is-3">Say hi!</h2>
                       <p> We will be happy hearing from you!</p>
-                    <form action="/success.html" data-netlify-recaptcha="true" netlify>
+                    <form name="contact" data-netlify-recaptcha="true" netlify>
                         <div class="field">
                             <label  class="label" for="name">name</label>
                             <input  class="input" name="name" type="text" placeholder="your name" required>
