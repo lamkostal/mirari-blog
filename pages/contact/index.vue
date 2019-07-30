@@ -7,8 +7,13 @@
                 <section class="form-section column is-6">
                       <h2 class="subtitle is-3">Say hi!</h2>
                       <p> We will be happy hearing from you!</p>
-                    <form name="contact" method="POST"  data-netlify="true">
+                   <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                           
                         <input type="hidden" name="form-name" value="contact" />
+                         <p class="hidden">
+                                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                         </p>
+                         
                         <div class="field">
                             <label  class="label" for="name">name</label>
                             <input  class="input" name="name" type="text" placeholder="your name" >
@@ -51,6 +56,8 @@ p{
      white-space: pre-line;
     
 }
-
+.hidden{
+    display: none;
+}
 </style>
 
