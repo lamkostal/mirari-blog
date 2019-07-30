@@ -10,12 +10,12 @@
                     <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                         <div class="field">
                             <label  class="label" for="name">name</label>
-                            <input  class="input" name="name" type="text" placeholder="your name" required>
+                            <input  class="input" name="name" type="text" placeholder="your name" >
                              <p class="help is-info">this field is not required</p>
                         </div>
                         <div class="field">
                             <label  class="label" for="email">email</label>
-                            <input  class="input" name="email" type="email" placeholder="your email" required>
+                            <input  class="input" name="email" type="email" placeholder="your email" >
                             <p class="help is-info">this field is not required</p>
                         </div>
                         <div class="field">
