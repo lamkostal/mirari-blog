@@ -8,7 +8,7 @@
                       <h2 class="subtitle is-3">Say hi!</h2>
                       <p> We will be happy hearing from you!</p>
                    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-                           
+                           <!-- this following input is for vue apps -->
                         <input type="hidden" name="form-name" value="contact" />
                          <p class="hidden">
                                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>

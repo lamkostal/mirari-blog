@@ -56,8 +56,14 @@ export default {
       return this.$store.getters.loadedPosts
     }
   },
-  mounted: function () {
-  CABLES.patch = new CABLES.Patch({
+  mounted: function (x) {
+    if(process.browser  ){
+      var x = window.matchMedia("(max-width: 700px)")
+      if (x.matches) { // If media query matches
+      console.log("it matched and worked");
+    return;
+  } else {
+     CABLES.patch = new CABLES.Patch({
         patchFile: 'js/clusterdeckOpt.json',
         prefixAssetPath: '',
         glCanvasId: 'glcanvas',
@@ -67,6 +73,15 @@ export default {
         onPatchLoaded: patchInitialized,
         onFinishedLoading: patchFinishedLoading,
     });
+
+  }
+
+    }
+  
+
+
+
+
 }
  
   
