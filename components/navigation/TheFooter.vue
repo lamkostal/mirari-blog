@@ -1,6 +1,6 @@
 <template>
-    <section class="footer ">
- <css-doodle>
+    <section class="footer "  @click="doodleUpdate">
+ <css-doodle id="doodle">
   :doodle {
     @grid: 20 / 100vmax;
     background: #0a0c27;
@@ -13,7 +13,7 @@ transform: rotate(@rand(360deg));
 clip-path: polygon(
   @rand(150%) 0, 100% @rand(80%), 0 @rand(20%)
 );
-</css-doodle>
+</css-doodle >
        <div class="container fcontent">
             <div class="columns">
                 <div class="column">
@@ -41,6 +41,14 @@ export default {
   name: "TheFooter",
   components: {
    
+  },
+  methods:{
+    doodleUpdate(event){
+      console.log("clicked")
+     let doodle=document.getElementById('doodle');
+     doodle.update();
+
+    }
   }
 };
 </script>
@@ -50,7 +58,7 @@ export default {
 
 .footer{
     height: 300px;
-    background:grey;
+    background:#0a0c27;
     margin-top:100px;
     overflow: hidden;
     position: relative;
@@ -62,6 +70,7 @@ export default {
     padding: 50px;
 }
 @media (max-width:600px){
+  css-doodle{display:none;}
   .fcontent{
    
     padding: 40px 15px 0px;

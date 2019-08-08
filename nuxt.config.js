@@ -24,7 +24,7 @@ module.exports = {
       {src:'/js/ops.js',SSR:true, defer:true},
       {src:'/js/init.js',SSR:true, defer:true},
       {src:"//app.storyblok.com/f/storyblok-latest.js?t=RrA1YQyLgMAWAfMRzp1Rqgtt",defer:true},
-      {src:"https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.7.1/css-doodle.min.js",defer:true},
+      {src:"https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.7.1/css-doodle.min.js",},
       {src:"https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js",defer:true}
 
     ]

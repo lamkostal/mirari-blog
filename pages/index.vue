@@ -57,7 +57,7 @@ export default {
     }
   },
   mounted: function (x) {
-    if(process.browser  ){
+    if(process.browser ){
       var x = window.matchMedia("(max-width: 700px)")
       if (x.matches) { // If media query matches
       console.log("it matched and worked");
