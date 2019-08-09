@@ -70,7 +70,9 @@ export default {
     padding: 50px;
 }
 @media (max-width:600px){
-  css-doodle{display:none;}
+  css-doodle{
+    display:none;
+    }
   .fcontent{
    
     padding: 40px 15px 0px;
