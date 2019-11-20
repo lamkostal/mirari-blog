@@ -1,7 +1,9 @@
 <template>
   <div class="homepage">
-   <section class='canvas-container'>
+      <section class='canvas-container'>
+    
      <canvas id="glcanvas" ></canvas>
+     
    </section>
   
     <section class="content main-section">
@@ -127,6 +129,7 @@ export default {
  }
  .canvas-container{
    display: none;
+   
  }
  .fullheight{
   height:50vh;
@@ -150,6 +153,7 @@ export default {
  z-index: 10;
  /* left:100px */
 }
+
 canvas{
   /* position: absolute; */
   /* height: 200px; */
