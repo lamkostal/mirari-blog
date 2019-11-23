@@ -56,11 +56,11 @@ beforeMount () {
 },
 mounted(){
 
-TweenMax.staggerTo('.greensc',1,{opacity:1,ease:Power2.easeOut},0.04);
-TweenMax.staggerFrom('.greensc',1,{rotation:55,ease:Power2.easeOut,transformOrigin:"30% 100%"},0.04);
-TweenMax.to('.logo',0.1,{opacity:1});
-TweenMax.staggerTo('.rednsc', 1 ,{opacity:1 ,ease:Power2.easeOut},0.1);
-TweenMax.staggerFrom('.rednsc',1.5,{rotation:-85,ease:Power3.easeOut,transformOrigin:"70% 0%"},0.07);
+gsap.staggerTo('.greensc',1,{opacity:1,ease:Power2.easeOut},0.04);
+gsap.staggerFrom('.greensc',1,{rotation:55,ease:Power2.easeOut,transformOrigin:"30% 100%"},0.04);
+gsap.to('.logo',0.1,{opacity:1});
+gsap.staggerTo('.rednsc', 1 ,{opacity:1 ,ease:Power2.easeOut},0.1);
+gsap.staggerFrom('.rednsc',1.5,{rotation:-85,ease:Power3.easeOut,transformOrigin:"70% 0%"},0.07);
 
 },
 beforeDestroy () {
