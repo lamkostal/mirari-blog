@@ -56,11 +56,11 @@ beforeMount () {
 },
 mounted(){
 
-gsap.staggerTo('.greensc',1,{opacity:1,ease:Power2.easeOut},0.04);
-gsap.staggerFrom('.greensc',1,{rotation:55,ease:Power2.easeOut,transformOrigin:"30% 100%"},0.04);
-gsap.to('.logo',0.1,{opacity:1});
-gsap.staggerTo('.rednsc', 1 ,{opacity:1 ,ease:Power2.easeOut},0.1);
-gsap.staggerFrom('.rednsc',1.5,{rotation:-85,ease:Power3.easeOut,transformOrigin:"70% 0%"},0.07);
+gsap.to('.greensc',{duration:1,opacity:1,ease:Power2.easeOut,stagger:0.04});
+gsap.from('.greensc',{duration:1,rotation:55,ease:Power2.easeOut,transformOrigin:"30% 100%",stagger:0.04});
+gsap.to('.logo',{duration:1.5,opacity:1});
+gsap.to('.rednsc', {duration:1,opacity:1 ,ease:Power2.easeOut,stagger:0.1},0.1);
+gsap.from('.rednsc',1{duration:1,rotation:-85,ease:Power3.easeOut,transformOrigin:"70% 0%",stagger:0.07});
 
 },
 beforeDestroy () {
