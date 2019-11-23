@@ -1,7 +1,7 @@
 {
-  "name": "mtga-storyblok-blog",
+  "name": "mirari",
   "version": "1.0.0",
-  "description": "My super-excellent Nuxt.js project",
+  "description": "mirari, an mtgarena blog",
   "author": "kl",
   "private": true,
   "scripts": {
