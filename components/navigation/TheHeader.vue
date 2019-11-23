@@ -58,7 +58,7 @@ mounted(){
 
 gsap.to('.greensc',{duration:1,opacity:1,ease:Power2.easeOut,stagger:0.04});
 gsap.from('.greensc',{duration:1,rotation:55,ease:Power2.easeOut,transformOrigin:"30% 100%",stagger:0.04});
-gsap.to('.logo',{duration:1.5,opacity:1});
+gsap.to('.logo',{duration:0.5,opacity:1});
 gsap.to('.rednsc', {duration:1,opacity:1 ,ease:Power2.easeOut,stagger:0.1});
 gsap.from('.rednsc',{duration:1,rotation:-85,ease:Power3.easeOut,transformOrigin:"70% 0%",stagger:0.07});
 
