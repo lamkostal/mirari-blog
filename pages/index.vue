@@ -65,16 +65,31 @@ export default {
       console.log("it matched and worked");
     return;
   } else {
-     CABLES.patch = new CABLES.Patch({
-        patchFile: 'js/clusterdeckOpt.json',
-        prefixAssetPath: '',
-        glCanvasId: 'glcanvas',
-        glCanvasResizeToWindow: true,
-        glCanvasResizeToParent:true,
-        onError: showError,
-        onPatchLoaded: patchInitialized,
-        onFinishedLoading: patchFinishedLoading,
-    });
+    // document.addEventListener('CABLES.jsLoaded', function(event) {
+           
+    //     });
+      function showError(errId, errMsg) {
+            alert('An error occured: ' + errId + ', ' + errMsg);
+        }
+
+        function patchInitialized() {
+            // You can now access the patch object (CABLES.patch), register variable watchers and so on
+        }
+
+        function patchFinishedLoading() {
+            // The patch is ready now, all assets have been loaded
+        }
+         CABLES.patch = new CABLES.Patch({
+                patch: CABLES.exportedPatch,
+                prefixAssetPath: '',
+                glCanvasId: 'glcanvas',
+                glCanvasResizeToWindow: true,
+                onError: showError,
+                onPatchLoaded: patchInitialized,
+                onFinishedLoading: patchFinishedLoading,
+
+       
+        });
 
   }
 
@@ -102,12 +117,12 @@ export default {
 .titles{
   position: relative;
   padding: 05vh 5vw 20vh 0;
- 
-  /* z-index: 100; */
+  z-index: 11;
 }
 .titles h2{
   color:grey;
   font-weight: 400;
+ 
   }
   .decor{
 
