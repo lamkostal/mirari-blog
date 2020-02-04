@@ -41,11 +41,11 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-    '~assets/styles/main.css'
-  ],
+  // css: [
+  //   '~assets/styles/main.css', '~assets/styles/style.scss'
+  // ],
 
- 
+  css: [ '~assets/styles/style.scss','~assets/styles/main.css'],
 
   /*
   ** Plugins to load before mounting the App
@@ -59,7 +59,7 @@ module.exports = {
   modules: [
     ['storyblok-nuxt',{ accessToken: process.env.NODE_ENV == 'production' ? 'Ux2Q0XBlson3pFKVPBGwswtt':'RrA1YQyLgMAWAfMRzp1Rqgtt' , cacheProvider : 'memory'}],
 
-    '@nuxtjs/bulma',
+    // '@nuxtjs/bulma',
     '@nuxtjs/markdownit'
   ],
   markdownit: {
