@@ -1,9 +1,9 @@
 <template>
     <div class="page container">
-        <section >
-            <div class="">
+        <section class="columns is-centered ">
+            <div class="column is-two-thirds ">
                 <h1 class="title is-1">Calculator</h1>
-                <p>This calculator gives the minimum number of colored mana sources needed in a 60-card deck to play a card with either one, two, or three colored mana in its cost by a certain turn with 90% probability, taking into account mulligans and other assumptions. The following results are based on Frank Karsten's <a href="https://www.channelfireball.com/articles/frank-analysis-how-many-colored-mana-sources-do-you-need-to-consistently-cast-your-spells/">analysis</a> on the topic.
+                <p class="is-6">This calculator gives the minimum number of colored mana sources needed in a 60-card deck to play a card with either one, two, or three colored mana in its cost by a certain turn with 90% probability, taking into account mulligans and other assumptions. The following results are based on Frank Karsten's <a href="https://www.channelfireball.com/articles/frank-analysis-how-many-colored-mana-sources-do-you-need-to-consistently-cast-your-spells/">analysis</a> on the topic.
                 </p>
                 <br>
                 <div class="calc-wrap is-size-5">
@@ -97,7 +97,7 @@ export default {
 }
 p{
      white-space: pre-line;
-     font-size:1.2rem
+     /* font-size:1.2rem */
 }
 .calc-wrap{
     line-height: 3rem;

@@ -1,19 +1,16 @@
 <template>
-    <nuxt-link class="column is-mobile is-half " :to="postLink" >
+    <nuxt-link class="column is-mobile is-half" :class="postWidth" :to="postLink" >
         <article class="box">
           <div class="post-thumb" >
            <div class="post-content ">
              <div class="">
-                   <h2 class="title is-4 is-inline-flex" >{{postTitle}}</h2>
-
+                 <h2 class="title is-5 is-inline-flex" >{{postTitle}}</h2>
                  <img class="tube-icon  icon " src="@/assets/images/icon-youtube (omg).svg" alt="video here" v-if="videoicon" >
-
-               
              </div>
             <div class="backgr image" :style="{backgroundImage:`url(${thumbnail})`}"></div>
             <div class="descriptive content">
-                  <h3 class="subtitle is-6 sub">{{postSubtitle}}</h3>
-                  <p class="is-5">{{previewText}}</p>
+                  <h3 class="subtitle is-5 sub">{{postSubtitle}}</h3>
+                  <p class="is-7">{{previewText}}</p>
             </div>
            </div>
           </div>
@@ -45,9 +42,13 @@ export default {
             required:true
         },
         videoicon:{
-            type:Boolean,
-            
-        }
+            type:Boolean,   
+        },
+          postWidth: {
+              type:String,
+          }
+        
+
         
     },
     computed:{
@@ -63,7 +64,7 @@ export default {
 
 
 .post-thumb{
-    padding: 10px
+    padding: 10px 0;
 }
 .descriptive h3{
     color:grey;
@@ -86,7 +87,7 @@ export default {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover ;
-    margin-top:30px;
+    margin-top:10px;
 }
 
 .tube-icon{

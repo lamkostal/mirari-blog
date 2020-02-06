@@ -12,6 +12,7 @@
           :previewText="post.previewText"
           :thumbnail="post.thumbnail"
           :videoicon="post.videoicon"
+          :postWidth="postWidth"
           />
     
         </section>
@@ -30,8 +31,10 @@ export default {
             required:true
         },
         isRecent:{
-            type:Boolean,
-           
+            type:Boolean, 
+        },
+        postWidth:{
+            type:String
         }
     },
     computed: {

@@ -1,7 +1,7 @@
 <template>
     <div class="page container">
         <h1 class="title is-size-1 ">All posts</h1>
-        <PostList :posts="loadedPosts"/>
+        <PostList :posts="loadedPosts" postWidth="is-one-third"/>
     </div>
 </template>
 

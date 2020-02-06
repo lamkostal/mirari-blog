@@ -12,13 +12,13 @@
           <h1 class="title is-1 is-marginless ">Welcome to Mirari!</h1>
           
           <div class="sub"
-          ><h2 class="subtitle is-5 sub is-centered">An MTGArena blog - Stay tuned for some cool stuff.  </h2></div>
+          ><h2 class="subtitle is-5 sub is-centered">An MTGArena blog - Stay tuned!  </h2></div>
         </div> 
       </div>
       <div class="container postlist-container">
         
         <h2 class="decor title is-3">Recent posts</h2>
-        <PostList :posts="loadedPosts" isRecent/>
+        <PostList :posts="loadedPosts" isRecent postWidth="is-half"/>
       </div>
     </section>     
     
@@ -124,10 +124,11 @@ export default {
   font-weight: 400;
  
   }
+  
   .decor{
-
     border-left:rgb(255, 195, 128) 5px solid;
     padding:0 10px 0 10px;
+    transform: translateY(-20px);
   }
 
 .main-section{

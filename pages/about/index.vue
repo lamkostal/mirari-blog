@@ -1,9 +1,9 @@
 <template>
-    <div class="page container">
-        <section >
-            <div class="">
+    <div class="page container ">
+        <section class="columns is-centered">
+            <div class="column is-two-thirds">
                 <h1 class="title is-1">{{title}}</h1>
-                <p>{{content}}</p>
+                <p class="is-6">{{content}}</p>
             </div>
         </section>
     </div>
@@ -26,12 +26,10 @@ export default {
 
 
 <style scoped>
-.about-page{
-    padding: 150px 0;
-}
+
 p{
      white-space: pre-line;
-     font-size:1.2rem
+     /* font-size:1.2rem */
 }
 </style>
 
