@@ -129,10 +129,12 @@
         color:gray;
         background:#fff;
         padding:6px 10px;
-        border-radius: 10px;
+        /* border-radius: 5px; */
         flex: 0 1 auto;
-        box-shadow: 1px 1px 1px 1px lightgrey;
-      
+
+background: #f6f6f6;
+box-shadow: inset 5px 5px 10px #e7e7e7, 
+            inset -5px -5px 10px #ffffff;
     }
     .md-content{
         margin:1rem 0;
