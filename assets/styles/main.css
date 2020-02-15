@@ -51,5 +51,7 @@ blockquote {
     /* opacity:0; */
   }
   
-  
+  .md-content ol{
+    padding: 0 1.5rem ;
+}
  

@@ -17,8 +17,8 @@
                       <div class="embed" v-html="loadedPost.video"></div>
                    
                     <div class="author ">
-                        <p class="author-name is-size-7">
-                            Written by {{loadedPost.author}}
+                        <p class="author is-size-7">
+                            Written by <span class="author-name" >{{loadedPost.author[0]}}</span>
                         </p>
                     </div>
                     <SocialShares :slug="slug"></SocialShares>        
@@ -124,22 +124,19 @@
         justify-content: flex-end;
     }
     .author-name{
-        /* color:rgba(8, 83, 97,1);
-        color:rgb(255, 195, 128); */
-        color:gray;
-        background:#fff;
-        padding:6px 10px;
-        /* border-radius: 5px; */
+       
+        color: rgb(8, 83, 97);
         flex: 0 1 auto;
-
+        margin-left:5px;
+/* 
 background: #f6f6f6;
 box-shadow: inset 5px 5px 10px #e7e7e7, 
-            inset -5px -5px 10px #ffffff;
+            inset -5px -5px 10px #ffffff; */
     }
     .md-content{
-        margin:1rem 0;
-        
+        margin:1rem 0;  
     }
+    
     .embed{
         margin:1rem 0;
     }
