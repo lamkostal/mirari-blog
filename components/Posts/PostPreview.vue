@@ -2,10 +2,11 @@
     <nuxt-link class="column is-mobile is-half" :class="postWidth" :to="postLink" >
         <article class="box">
           <div class="post-thumb" >
-           <div class="post-content ">
-             <div class="">
-                 <h2 class="title is-5 is-inline-flex" >{{postTitle}}</h2>
-                 <img class="tube-icon  icon " src="@/assets/images/icon-youtube (omg).svg" alt="video here" v-if="videoicon" >
+           <div class="post-content">
+             <div class="header">
+                 
+                 <h2 class="title is-5 is-inline-flex" ><img class="tube-icon  icon" src="@/assets/images/icon-youtube (omg).svg" alt="video icon" v-if="videoicon" >{{postTitle}}</h2>
+
              </div>
             <div class="backgr image" :style="{backgroundImage:`url(${thumbnail})`}"></div>
             <div class="descriptive content">
@@ -62,6 +63,11 @@ export default {
 
 <style scoped>
 
+.header{
+    min-height:5rem;
+    padding-top:0.5rem;
+}
+
 
 .post-thumb{
     padding: 10px 0;
@@ -92,10 +98,9 @@ export default {
 
 .tube-icon{
    
-    /* width:35px; */
-    top:5px;
+    margin-right: 10px;
     position: relative;
-    margin: 0 5px;
+ 
   
 }
 

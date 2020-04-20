@@ -10,7 +10,7 @@
       class="sidenav" @click="$emit('close')">
       <ul class="nav-list">
         <li class="nav-item"><nuxt-link to="/" exact>Home</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/posts">All Posts</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/posts">Posts</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/calculator">Calculator</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
