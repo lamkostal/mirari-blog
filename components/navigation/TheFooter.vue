@@ -24,12 +24,13 @@ clip-path: polygon(
         <li class="nav-item flink"><nuxt-link class="flink" to="/calculator">Calculator</nuxt-link></li>
         <li class="nav-item flink"><nuxt-link class="flink" to="/contact">Contact</nuxt-link></li>
         <li class="nav-item flink"><nuxt-link class="flink" to="/about">About</nuxt-link></li>
+        <li><a href="https://kleo-dimi.gr/">Created by KD</a></li>
   
      
                     </ul>
                 </div>
                 <div class="column"></div>
-                <div class="column"><a href="https://kleo-dimi.gr/">created by KD</a></div>
+                <div class="column"></div>
             </div>
        </div>
     </section>
