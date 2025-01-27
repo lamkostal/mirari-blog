@@ -29,7 +29,7 @@ clip-path: polygon(
                     </ul>
                 </div>
                 <div class="column"></div>
-                <div class="column"></div>
+                <div class="column"><a href="https://kleo-dimi.gr/">created by KD</a></div>
             </div>
        </div>
     </section>
