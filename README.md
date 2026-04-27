@@ -1,22 +1,60 @@
-# mtga-blog
+# mirari
 
-> My super-excellent Nuxt.js project
+## Project Overview
+`mirari` is an MTGArena blog built as a Nuxt 2 application.
 
-## Build Setup
+- **Name:** `mirari`
+- **Description:** `mirari, an mtgarena blog`
+- **App type:** Nuxt 2 (`nuxt ^2.15.4`)
+- **Mode:** `universal`
+- **Target:** `static`
 
-``` bash
-# install dependencies
-$ npm install
+## Tech Stack
+- **Framework:** Nuxt 2 (`^2.15.4`)
+- **CMS Integration:** `storyblok-nuxt`, `storyblok-js-client`
+- **Markdown Support:** `@nuxtjs/markdownit` (injected)
+- **Styling:** `sass`, `sass-loader`
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Prerequisites
+- Node.js and npm installed
+- Access to install npm dependencies
 
-# build for production and launch server
-$ npm run build
-$ npm start
+## Getting Started
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-# generate static project
-$ npm run generate
-```
+## Available Scripts
+- `npm run dev` - start development mode
+- `npm run build` - build the application
+- `npm run start` - start the built application
+- `npm run generate` - generate static output
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Content & Static Generation
+Static generation is configured to include:
+- Core routes: `/`, `/posts`, `/about`
+- Dynamic post routes: `/posts/:id` slugs fetched from the Storyblok API
+
+## Project Structure
+Notable page routes:
+- `/`
+- `/posts`
+- `/posts/:id`
+- `/about`
+- `/calculator`
+- `/contact`
+
+Core directories:
+- `pages/` - route-level pages
+- `components/` - shared UI, navigation, and post components
+- `assets/styles/` - global stylesheets
+
+## Notes
+- Storyblok is used as the content source via Nuxt and JS client integrations.
+- Markdown rendering support is enabled through injected markdown-it integration.
+- The app runs in `universal` mode while targeting static generation.
